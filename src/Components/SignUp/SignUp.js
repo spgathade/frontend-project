@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import  './SignUp.css';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {createUserWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer,toast } from "react-toastify";
  import 'react-toastify/dist/ReactToastify.css';
 import { auth } from "../firebase";
@@ -20,8 +20,8 @@ class SignUp extends Component {
    
     newSignUp=()=>{
         
-        const auth = auth();
-        createUserWithEmailAndPassword(auth,this.state.emailId,this.state.password)
+        
+        auth.createUserWithEmailAndPassword(this.state.emailId,this.state.password)
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
