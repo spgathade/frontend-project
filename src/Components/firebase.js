@@ -38,14 +38,13 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 // Initialize Firebase
 const firebaseApp = initializeApp( {
-  apiKey: "AIzaSyAZCLQe4HyJiLTMuyV9peRAgw2ukxZyGdI",
-  authDomain: "social-media-app-cdac.firebaseapp.com",
-  databaseURL: "https://social-media-app-cdac-default-rtdb.firebaseio.com",
-  projectId: "social-media-app-cdac",
-  storageBucket: "social-media-app-cdac.appspot.com",
-  messagingSenderId: "755965045671",
-  appId: "1:755965045671:web:e9ba46d5d16bdf6ce2e482",
-  measurementId: "G-4TEC9J4HST"
+  apiKey: "AIzaSyB4EjSqZz_kjiZhG7kAZOnWjLit0-UH_40",
+  authDomain: "instaclone-e881b.firebaseapp.com",
+  projectId: "instaclone-e881b",
+  storageBucket: "instaclone-e881b.appspot.com",
+  messagingSenderId: "179627903539",
+  appId: "1:179627903539:web:00c572c4b885092b9e7146",
+
   });
 
 const auth = getAuth(firebaseApp);
