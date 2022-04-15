@@ -1,10 +1,7 @@
 import React,{Component,useState} from "react";
-import {render} from "react-dom";
 import Post from "../Post/Post";
 import  './MainPage.css';
 import uploadImage from "../../images/upload1.png"
-import {storage} from "../firebase";
-import firebase from 'firebase/compat/app';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 class MainPage extends Component {

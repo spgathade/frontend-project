@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import  './Post.css';
 import Avatar from '@material-ui/core/Avatar';
-import postimage from "../../images/post.jpg"
 import love from "../../images/love.svg"
 import comment from "../../images/comment.svg"
 import share from "../../images/share.svg"

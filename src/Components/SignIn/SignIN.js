@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {storage,auth,stor} from "../firebase";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer,toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';

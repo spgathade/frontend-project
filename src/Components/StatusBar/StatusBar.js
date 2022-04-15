@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import "./StatusBar.css";
 import { Avatar } from '@material-ui/core';
-import statusimg from "../../images/pp1.png";
 import uploadimage from "../../images/statusadd.png";
-import {storage,auth} from "../firebase";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { ModalBody, ModalHeader, ModalTitle } from 'react-bootstrap';
 import { Modal, Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import { toast } from 'react-toastify';
