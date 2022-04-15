@@ -21,7 +21,7 @@ class SignUp extends Component {
     newSignUp=()=>{
         
         
-        auth.createUserWithEmailAndPassword(this.state.emailId,this.state.password)
+        createUserWithEmailAndPassword(auth,this.state.emailId,this.state.password)
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
