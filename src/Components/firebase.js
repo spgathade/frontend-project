@@ -37,18 +37,16 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 // };
 
 // Initialize Firebase
-const firebaseApp = initializeApp( {
+const firebaseConfig = {
   apiKey: "AIzaSyB4EjSqZz_kjiZhG7kAZOnWjLit0-UH_40",
   authDomain: "instaclone-e881b.firebaseapp.com",
   projectId: "instaclone-e881b",
   storageBucket: "instaclone-e881b.appspot.com",
   messagingSenderId: "179627903539",
   appId: "1:179627903539:web:00c572c4b885092b9e7146",
+  };
 
-  });
-
-const auth = getAuth(firebaseApp);
-const storage = getStorage(firebaseApp);
-
-export {auth,storage};
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const storage = getStorage(app);
 
